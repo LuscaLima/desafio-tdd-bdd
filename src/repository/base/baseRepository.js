@@ -7,7 +7,7 @@ class BaseRepository {
 
   async find(itemId) {
     const file = await readFile(this.file)
-    const content = JSON.stringify(file)
+    const content = JSON.parse(file)
 
     if (!itemId) {
       return content
