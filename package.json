@@ -10,7 +10,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "chai": "^4.3.0"
+  },
   "devDependencies": {
     "faker": "^5.3.1",
     "mocha": "^8.2.1",
