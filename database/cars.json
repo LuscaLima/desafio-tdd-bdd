@@ -1,1 +1,23 @@
-[{"id":"0f48cbdd-c86e-48aa-8413-1057c6a76ae5","name":"Alpine","releaseYear":2020,"avaliable":true,"gasAvaliable":true},{"id":"5899dca9-0133-4526-8871-e539857a0b07","name":"Fortwo","releaseYear":2020,"avaliable":true,"gasAvaliable":true}]
+[
+  {
+    "id": "751bef15-9f9b-4050-a427-346cfd39feee",
+    "name": "XTS",
+    "releaseYear": 2020,
+    "avaliable": true,
+    "gasAvaliable": true
+  },
+  {
+    "id": "819352bb-efb6-46af-89a6-985804f690ed",
+    "name": "Silverado",
+    "releaseYear": 2020,
+    "avaliable": true,
+    "gasAvaliable": true
+  },
+  {
+    "id": "caf499e8-6ee9-40de-8dca-ccd5276ba432",
+    "name": "Golf",
+    "releaseYear": 2020,
+    "avaliable": true,
+    "gasAvaliable": true
+  }
+]
