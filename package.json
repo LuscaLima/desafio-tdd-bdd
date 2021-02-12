@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "seed": "node ./seed"
+    "seed": "node ./seed",
+    "test": "npx mocha -w --parallel ./test/**/*.test.js",
+    "test:cov": "npx nyc mocha --parallel ./test/**/*.test.js"
   },
   "author": "",
   "license": "ISC",
