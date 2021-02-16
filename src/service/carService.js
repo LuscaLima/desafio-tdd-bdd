@@ -5,8 +5,23 @@ class CarService {
     this.carRepository = new BaseRepository({ file: cars })
   }
 
-  async getAvaliableCar() {
-    return null
+  getRandomPositionFromArray(list) {
+    const listLength = list.length
+
+    return Math.floor(Math.random() * listLength)
+  }
+
+  chooseRandomCar(carCategory) {
+    const randomCarIndex = this.getRandomPositionFromArray(carCategory.carIds)
+
+    return carCategory.carIds[randomCarIndex]
+  }
+
+  async getAvaliableCar(carCategory) {
+    const carId = this.chooseRandomCar(carCategory)
+    const car = await this.carRepository.find(carId)
+
+    return car
   }
 }
 
