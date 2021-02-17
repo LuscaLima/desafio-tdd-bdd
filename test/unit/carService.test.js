@@ -69,4 +69,32 @@ describe("CarService tests swite", () => {
     expect(carService.carRepository.find.calledWithExactly(car.id)).to.be.ok
     expect(result).to.be.deep.equal(expected)
   })
+
+  it("given a carCategory, customer and numberOfDays it should calculate the final amount in BRL", async () => {
+    const customer = Object.create(mocks.customer)
+    customer.birthDate = new Date("02-26-1966")
+
+    const carCategory = Object.create(mocks.carCategory)
+    carCategory.price = 37.6
+
+    const numberOfDays = 5
+
+    // not rely on external data
+    sandbox.stub(carService, "taxesBasedOnAge").get(() => [
+      {
+        from: 31,
+        to: 85,
+        then: 1.3,
+      },
+    ])
+
+    const expected = carService.currencyFormat.format(244.4)
+    const result = carService.calculateFinalPrice(
+      customer,
+      carCategory,
+      numberOfDays
+    )
+
+    expect(result).to.be.deep.equal(expected)
+  })
 })
