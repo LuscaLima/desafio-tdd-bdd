@@ -21,7 +21,7 @@ Application of BDD and TDD techniques for testing a simple API
 
 ## Prerequisites
 
-Before you start, you need to have the following tools on your machine: [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/). Also, it's good to have a code editor likes [VSCode](https://code.visualstudio.com/)
+Before you start, you need to have the following tools on your machine: [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/). Also, it's good to have a code editor like [VSCode](https://code.visualstudio.com/)
 
 ## Install
 
@@ -44,6 +44,8 @@ $ yarn install
 
 Whereas the currently selected folder is folder's project
 
+For tests:
+
 ```bash
 # Run the tests
 $ npm run test
@@ -53,7 +55,7 @@ $ yarn test
 
 The results will be displayed in the terminal.
 
-For coverage test
+For coverage tests:
 
 ```bash
 # Run the coverage tests
